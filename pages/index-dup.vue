@@ -7,60 +7,75 @@
         <Title>Strong Password Generator</Title>
         <Meta
           name="description"
-          content="Generate strong password using uppercase and lowercase letters, numbers, and symbols to secure your digital accounts"
+          content="Generate strong password using uppercase and lowercase letters, numbers, and symbols to secure your digital account"
         />
-       
+         
+        <!-- <Script src="https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js">
+        </Script> -->
       </Head>
     </Html>
 
     <Header></Header>
 <!-- -------------------------------------- -->
-    <div class="py-0 sm:py-4 px-0 sm:px-0 w-full ">
+    <div class="py-2 sm:py-10 px-0 sm:px-0">
       <main>
-        <div class="mx-auto px-0 sm:px-2 px-0">
+        <div class="w-full sm:max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
           <!-- Replace with your content -->
-          <div class="px-0 sm:px-4 py-0 sm:py-4">
-            <div class="bg-slate-700 px-3 sm:px-2 rounded-sm sm:rounded-lg">
+          <div class="px-1 sm:px-2 sm:py-2 sm:py-4">
+            <div class="border-4 border-dashed border-gray-100 rounded-lg h-auto bg-gray-50 sm:bg-gray-50 px-4 sm:px-2">
 
               <div class="sm:max-w-2xl w-full mx-auto pt-5 sm:pt-7 lg:pt-10 pb-5">
                 <h1
-                  class="text-white font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white">
+                  class="text-slate-900 font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white">
                   Need a password? Try the Strong Password Generator</h1>
-                <p class="mt-6 text-lg text-slate-300 text-center max-w-3xl mx-auto dark:text-slate-400">Generate secure password to protect user accounts</p>
-                <div class="mt-4 sm:mt-10 flex justify-center space-x-6 text-xl sm:text-center ">
+                <p class="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">Generate secure, random passwords to stay safe online.</p>
+                <div class="mt-6 sm:mt-10 flex justify-center space-x-6 sm:text-center ">
                     
-                    <span class="tracking-widest w-full space-x-3 px-3 h-14 grid items-center bg-white border-none hover:ring-slate-300 focus:outline-none shadow-lg rounded-sm text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
-                      {{strongPassword}}
+                    <span class=" w-full space-x-3 px-3 h-12 grid items-center bg-white border-none hover:ring-slate-300 focus:outline-none shadow-lg rounded-md text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
+                      <!-- {{strongPassword}} -->
+                       <div>
+                          <!-- <label for="search" class="block text-sm font-medium text-gray-700">Quick search</label> -->
+                          <div class=" relative flex items-center">
+                            <input type="text" class="text-md h-12 text-center tracking-widest block w-full focus:outline-none pr-4 sm:text-xl border-none text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700" v-model="strongPassword"/>
+                            <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5 cursor-pointer">
+                              <kbd  @click.prevent="copyPassword" class="inline-flex items-center border border-gray-200 rounded px-2 text-sm font-sans font-medium text-gray-400 "> {{textCopy}} </kbd>
+                            </div>
+                          </div>
+                        </div>
+                       
                     </span>
                   
 
                   </div>
-                  <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-3 justify-between gap-4 text-sm">
-                    <a @click="generatePasswordClick" class="sm:col-span-2 bg-blue-600 cursor-pointer hover:bg-blue-800 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Password</a>
-                    <a @click.prevent="copyPassword" class="bg-black cursor-pointer hover:bg-slate-700 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
+                  <div class="mt-3 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 justify-between gap-4 text-sm">
+                    <a @click="generatePasswordClick" class="cursor-pointer bg-slate-900 hover:bg-slate-700 focus:outline-none text-white font-semibold h-9 px-6 rounded-md w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Strong Password</a>
+                    <!-- <a @click.prevent="copyPassword" class="bg-slate-900 hover:bg-slate-700 focus:outline-none text-white font-semibold h-9 px-6 rounded-md w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Copy</a> -->
+                      <div class="flex items-center justify-center space-x-2 text-sm font-medium text-slate-600 range-wrap">
+                      <span>Length</span>
+                      <!-- <div class="range-value" id=""></div> -->
+                      <input id="range" type="range" min="8" max="24" value="12" step="4">
+                      <span id="rangeV" class="bg-white focus:outline-none font-semibold h-9 w-16 px-6 rounded-md w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{passwordLength}}</span>
+                    </div>    
                   </div>
-                  <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm ">
-                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 w-full ml-1 sm:ml-0">
-                        <label class="flex items-center space-x-2 text-sm font-medium text-slate-300">
+                  <div class="mt-3 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
+                        <label class="flex items-center justify-center space-x-2 text-sm font-medium text-slate-600">
                           <input type="checkbox" class="accent-violet-500" v-model="toggleNumbers"/>
                           <span>Numbers</span>
                         </label>                  
-                        <label class="flex items-center space-x-2 text-sm font-medium text-slate-300">
+                        <label class="flex items-center justify-center space-x-2 text-sm font-medium text-slate-600">
                           <input type="checkbox" class="accent-violet-500" v-model="toggleSymbols"/>
                           <span>Symbols</span>
                         </label>
                     </div>
-                    <div class="inline-flex items-center justify-center space-x-3 w-full">
-                      <span class="text-slate-300">Length</span>
-                      <input id="range" class="" type="range" min="8" max="24" value="12" step="4">
-                      <span id="rangeV" class="bg-white focus:outline-none font-semibold h-9 w-10 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{passwordLength}}</span>
-                    </div>                 
+                               
                    </div>
-                    <div class="w-full sm:w-full mt-4">
-                      <p class="mt-4 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">An excellent, and often overlooked security step is to use a long and complete password.</p>
-                        <p class="mt-2 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">A secure password should be at least eight characters and contain a combination of uppercase and lowercase letters, numerals, and symbols.</p>
-                      <p class="mt-2 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">Password security is a serious issue. When you use the same password for most of your online accounts, it's easy for someone to get into your email or social media account.</p>
-                    </div>
+                    <!-- <div class="w-full sm:w-full">
+                      <p class="mt-4 text-md sm:text-md text-slate-900 font-normal tracking-tight dark:text-slate-50 ">An excellent, and often overlooked security step is to use a long and complete password.</p>
+                        <p class="mt-2 text-md sm:text-md text-slate-900 font-normal tracking-tight dark:text-slate-50 ">A secure password should be at least eight characters and contain a combination of uppercase and lowercase letters, numerals, and symbols. To complete your profile, you can also include numbers in the password for that extra layer of security.</p>
+                      <p class="mt-2 text-md sm:text-md text-slate-900 font-normal tracking-tight dark:text-slate-50 ">Password security is a serious issue.</p>
+                        <p class="mt-2 text-md sm:text-md text-slate-900 font-normal tracking-tight dark:text-slate-50 ">When you use the same password for most of your online accounts, it's easy for someone to get into your email or social media account. Make sure you are using a secure, strong password that includes uppercase letters, lowercase letters, numbers and symbols.</p>
+                    </div> -->
               </div>
 
             </div>
@@ -71,7 +86,6 @@
     </div>
 
       <!-- Notification -->
-          <Footer></Footer>
 
      <div aria-live="assertive" class="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start">
       <div class="w-full flex flex-col items-center space-y-4 sm:items-end">
@@ -97,6 +111,7 @@
         </transition>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -143,7 +158,7 @@ export default {
     let toggleSymbols = ref(false)
     let strongPassword = ref("")
     let copiedPassword = ref(false)
-    let textCopy = ref("Copy Password")
+    let textCopy = ref("Copy")
     // const toggleNumbers = ref(true)
     // generatePassword
     // copyPassword
@@ -172,7 +187,7 @@ export default {
               newPosition = 10 - newValue * 0.2;
             // rangeV.innerHTML = `<span>${range.value}</span>`;
             passwordLength.value = parseInt(range.value);
-            // console.log(passwordLength.value, "password length selected@@@@@@@@@@@@@@@");
+            console.log(passwordLength.value, "password length selected@@@@@@@@@@@@@@@");
             rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
           };
         document.addEventListener("DOMContentLoaded", setValue);
@@ -183,7 +198,7 @@ export default {
  
 
           function generatePassword(rangePass) {
-            textCopy.value = "Copy Password";
+            textCopy.value = "Copy";
             var numberChars = "0123456789";
             var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             var lowerChars = "abcdefghijklmnopqrstuvwxyz";
@@ -227,10 +242,10 @@ export default {
             return array;
             }
 
-          strongPassword.value = generatePassword(12)
+          strongPassword.value = generatePassword(passwordLength.value)
 
           function generatePasswordClick() {
-            // console.log(strongPassword, passwordLength.value, "here!!!!!!!!!!!!!!!!!!!!!!!!!")
+            console.log(strongPassword, passwordLength.value, "here!!!!!!!!!!!!!!!!!!!!!!!!!")
             strongPassword.value = generatePassword(passwordLength.value)
 
             console.log("New Strong Password:", strongPassword);
@@ -265,7 +280,7 @@ export default {
       toggleSymbols,
       generatePasswordClick,
       copiedPassword,
-      textCopy,
+      textCopy
       
     }
   },
@@ -275,7 +290,7 @@ export default {
 input[type=range] {
 	-webkit-appearance: none;
 	margin: 20px 0;
-	width: 50%;
+	width: 20%;
 }
 input[type=range]:focus {
 	outline: none;

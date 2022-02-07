@@ -2,12 +2,14 @@
   <header
     class="flex-shrink-0 relative h-16 bg-white flex items-center border-b-2 border-gray-200"
   >
-    <img class="h-12 w-36" src="~/assets/img/logo1.svg" alt="Workflow" />
+    <img class="w-auto h-9 sm:h-10 ml-1 sm:ml-4" src="~/public/logo.png" alt="Workflow" />
+          <!-- <h4 class="font-extrabold text-lg ml-2 text-slate-900">Strong Password Generator</h4> -->
 
     <!-- Desktop nav area -->
     <div
       class="hidden lg:min-w-0 lg:flex-1 lg:flex lg:items-center lg:justify-between"
-    ></div>
+    >
+    </div>
   </header>
 </template>
 
@@ -83,19 +85,19 @@ export default {
       { name: "Settings", href: "#", children: [] },
     ];
 
-    const user = {
-      name: "Whitney Francis",
-      email: "whitneyfrancis@example.com",
-      imageUrl:
-        "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    };
+    // const user = {
+    //   name: "Whitney Francis",
+    //   email: "whitneyfrancis@example.com",
+    //   imageUrl:
+    //     "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    // };
 
     const open = ref(false);
 
     return {
       open,
       navigation,
-      user,
+      // user,
     };
   },
 };
