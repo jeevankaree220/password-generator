@@ -20,17 +20,18 @@ export default defineNuxtConfig({
   },
   buildModules: [
     "@nuxtjs/google-fonts",
+    // "@nuxtjs/gtm",
   ],
-
-
-  // googleFonts: {
-  //   display: "swap",
-  //   families: {
-  //     Inter: {
-  //       wght: [100, 200, 300, 400, 500, 600, 700, 800, 900]
-  //     }
-  //   }
-  // },
+  googleFonts: {
+    families: {
+    Roboto: true,
+    'Josefin+Sans': true,
+    Lato: [100, 300],
+    Raleway: {
+      wght: [100, 400],
+      ital: [100]
+    },
+  },
 
   hooks: {
     'pages:extend' (pages) {
