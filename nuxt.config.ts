@@ -32,6 +32,7 @@ export default defineNuxtConfig({
       ital: [100]
     },
   },
+  },
 
   hooks: {
     'pages:extend' (pages) {
