@@ -7,7 +7,7 @@
         <Title>Strong Password Generator</Title>
         <Meta
           name="description"
-          content="Generate strong password using uppercase and lowercase letters, numbers, and symbols to secure your digital accounts"
+          content="Generate strong random password using uppercase and lowercase letters, numbers, and symbols to secure your digital accounts"
         />
        
       </Head>
@@ -24,20 +24,20 @@
 
               <div class="sm:max-w-2xl w-full mx-auto pt-5 sm:pt-7 lg:pt-10 pb-5">
                 <h1
-                  class="text-white font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white">
-                  Need a password? Try the Strong Password Generator</h1>
-                <p class="mt-6 text-lg text-slate-300 text-center max-w-3xl mx-auto dark:text-slate-400">Generate secure password to protect user accounts</p>
-                <div class="mt-4 sm:mt-10 flex justify-center space-x-6 text-xl sm:text-center ">
+                  class="text-white font-extrabold text-2xl sm:text-5xl tracking-tight text-center dark:text-white">
+                  Strong Password Generator</h1>
+                <p class="mt-6 text-lg text-slate-300 text-center max-w-3xl mx-auto dark:text-slate-400">Generate random, secure password to protect user accounts</p>
+                <div class="mt-4 sm:mt-10 flex justify-center space-x-6 text-xl sm:text-3xl sm:text-center ">
                     
-                    <span class="tracking-widest w-full space-x-3 px-3 h-14 grid items-center bg-white border-none hover:ring-slate-300 focus:outline-none shadow-lg rounded-sm text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
+                    <span class="tracking-widest w-full space-x-3 px-3 sm:h-24 h-14 grid items-center bg-white border-none hover:ring-slate-300 focus:outline-none shadow-lg rounded-sm text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
                       {{strongPassword}}
                     </span>
                   
 
                   </div>
                   <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-3 justify-between gap-4 text-sm">
-                    <a @click="generatePasswordClick" class="sm:col-span-2 bg-blue-600 cursor-pointer hover:bg-blue-800 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Password</a>
-                    <a @click.prevent="copyPassword" class="bg-teal-600 cursor-pointer hover:bg-teal-800 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
+                    <a @click="generatePasswordClick" class="sm:col-span-2 bg-blue-600 cursor-pointer hover:bg-blue-800 focus:outline-none text-white font-normal sm:h-12 h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Password</a>
+                    <a @click.prevent="copyPassword" class="bg-teal-600 cursor-pointer hover:bg-teal-800 focus:outline-none text-white font-normal sm:h-12 h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
                   </div>
                   <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm ">
                     <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 w-full ml-1 sm:ml-0">
