@@ -37,7 +37,7 @@
                   </div>
                   <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-3 justify-between gap-4 text-sm">
                     <a @click="generatePasswordClick" class="sm:col-span-2 bg-blue-600 cursor-pointer hover:bg-blue-800 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Password</a>
-                    <a @click.prevent="copyPassword" class="bg-black cursor-pointer hover:bg-slate-700 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
+                    <a @click.prevent="copyPassword" class="bg-teal-600 cursor-pointer hover:bg-teal-800 focus:outline-none text-white font-normal h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
                   </div>
                   <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm ">
                     <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 w-full ml-1 sm:ml-0">
@@ -104,24 +104,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { BellIcon, MenuIcon, XIcon, CheckCircleIcon  } from '@heroicons/vue/outline'
 
-// const user = {
-//   name: 'Tom Cook',
-//   email: 'tom@example.com',
-//   imageUrl:
-//     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-// }
-// const navigation = [
-//   { name: 'Dashboard', href: '#', current: true },
-//   { name: 'Team', href: '#', current: false },
-//   { name: 'Projects', href: '#', current: false },
-//   { name: 'Calendar', href: '#', current: false },
-// ]
-// const userNavigation = [
-//   { name: 'Your Profile', href: '#' },
-//   { name: 'Settings', href: '#' },
-//   { name: 'Sign out', href: '#' },
-// ]
-
 export default {
   components: {
     Disclosure,
@@ -144,24 +126,11 @@ export default {
     let strongPassword = ref("")
     let copiedPassword = ref(false)
     let textCopy = ref("Copy Password")
-    // const toggleNumbers = ref(true)
-    // generatePassword
-    // copyPassword
-    // toggleNumbers
-    // toggleSymbols
+  
 
     
 
     onMounted(async () => {
-
-        // $( "#generateStrgPswd" ).click(function() {
-        //         $("#jkRandomPwd").val('')
-        //         generatePassword();
-        //     });
-
-
-
-       
 
     const range = document.getElementById("range"),
           rangeV = document.getElementById("rangeV"),
@@ -170,9 +139,7 @@ export default {
                 ((range.value - range.min) * 100) / (range.max - range.min)
               ),
               newPosition = 10 - newValue * 0.2;
-            // rangeV.innerHTML = `<span>${range.value}</span>`;
             passwordLength.value = parseInt(range.value);
-            // console.log(passwordLength.value, "password length selected@@@@@@@@@@@@@@@");
             rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
           };
         document.addEventListener("DOMContentLoaded", setValue);
@@ -188,7 +155,7 @@ export default {
             var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             var lowerChars = "abcdefghijklmnopqrstuvwxyz";
             var specials = "}{!@#$%^&)(?*";
-            console.log(toggleNumbers, toggleSymbols, "checkboxes###########");
+            // console.log(toggleNumbers, toggleSymbols, "checkboxes###########");
 
             var allChars = upperChars + lowerChars;
             var randPasswordArray = Array(passwordLength.value);
@@ -230,7 +197,6 @@ export default {
           strongPassword.value = generatePassword(12)
 
           function generatePasswordClick() {
-            // console.log(strongPassword, passwordLength.value, "here!!!!!!!!!!!!!!!!!!!!!!!!!")
             strongPassword.value = generatePassword(passwordLength.value)
 
             console.log("New Strong Password:", strongPassword);
