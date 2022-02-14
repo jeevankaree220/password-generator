@@ -4,30 +4,31 @@
   <div class="min-h-full">
     <Html>
       <Head>
+       
         <Title>Strong Password Generator</Title>
         <Meta
           name="description"
           content="Generate strong random password using uppercase and lowercase letters, numbers, and symbols to secure your digital accounts"
         />
-       
+        
       </Head>
     </Html>
 
     <Header></Header>
 <!-- -------------------------------------- -->
-    <div class="py-0 sm:py-4 px-0 sm:px-0 w-full ">
+    <div class="py-0 sm:py-0 px-0 sm:px-0 w-full ">
       <main>
-        <div class="mx-auto px-0 sm:px-2 px-0">
+        <div class="mx-auto px-0 sm:px-0 px-0">
           <!-- Replace with your content -->
-          <div class="px-0 sm:px-4 py-0 sm:py-4">
-            <div class="bg-slate-700 px-3 sm:px-2 rounded-sm sm:rounded-lg">
+          <div class="px-0 sm:px-0 py-0 sm:py-0">
+            <div class="bg-gray-800 px-2 sm:px-2 min-h-max">
 
-              <div class="sm:max-w-2xl w-full mx-auto pt-5 sm:pt-7 lg:pt-10 pb-5">
+              <div class="sm:max-w-3xl w-full mx-auto pt-5 sm:pt-7 lg:pt-10 pb-5">
                 <h1
                   class="text-white font-extrabold text-2xl sm:text-5xl tracking-tight text-center dark:text-white">
                   Strong Password Generator</h1>
-                <p class="mt-6 text-lg text-slate-300 text-center max-w-3xl mx-auto dark:text-slate-400">Generate random, secure password to protect user accounts</p>
-                <div class="mt-4 sm:mt-10 flex justify-center space-x-6 text-xl sm:text-3xl sm:text-center ">
+                <p class="mt-2 sm:mt-6 text-lg text-slate-300 text-center max-w-3xl mx-auto dark:text-slate-400">Generate random, secure password to protect user accounts</p>
+                <div class="mt-4 sm:mt-10 flex justify-center text-center space-x-6 text-xl sm:text-3xl sm:text-center ">
                     
                     <span class="tracking-widest w-full space-x-3 px-3 sm:h-24 h-14 grid items-center bg-white border-none hover:ring-slate-300 focus:outline-none shadow-lg rounded-sm text-slate-800 dark:bg-slate-800 dark:ring-0 dark:text-slate-300 dark:highlight-white/5 dark:hover:bg-slate-700">
                       {{strongPassword}}
@@ -35,17 +36,17 @@
                   
 
                   </div>
-                  <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-3 justify-between gap-4 text-sm">
+                  <div class="mt-5 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 justify-between gap-4 text-sm">
                     <a @click="generatePasswordClick" class="sm:col-span-2 bg-blue-600 cursor-pointer hover:bg-blue-800 focus:outline-none text-white font-normal sm:h-12 h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Generate Password</a>
                     <a @click.prevent="copyPassword" class="bg-teal-600 cursor-pointer hover:bg-teal-800 focus:outline-none text-white font-normal sm:h-12 h-9 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{textCopy}}</a>
                   </div>
-                  <div class="mt-4 sm:mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm ">
-                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 w-full ml-1 sm:ml-0">
-                        <label class="flex items-center space-x-2 text-sm font-medium text-slate-300">
+                  <div class="mt-5 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-sm ">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 w-full ml-1 sm:ml-0 mb-4 sm:mb-0 mt-4 sm:mt-0">
+                        <label class="flex items-center justify-center space-x-2 text-sm font-medium text-slate-300">
                           <input type="checkbox" class="accent-violet-500" v-model="toggleNumbers"/>
                           <span>Numbers</span>
                         </label>                  
-                        <label class="flex items-center space-x-2 text-sm font-medium text-slate-300">
+                        <label class="flex items-center justify-center space-x-2 text-sm font-medium text-slate-300">
                           <input type="checkbox" class="accent-violet-500" v-model="toggleSymbols"/>
                           <span>Symbols</span>
                         </label>
@@ -56,10 +57,11 @@
                       <span id="rangeV" class="bg-white focus:outline-none font-semibold h-9 w-10 px-6 rounded-sm w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">{{passwordLength}}</span>
                     </div>                 
                    </div>
-                    <div class="w-full sm:w-full mt-4">
-                      <p class="mt-4 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">An excellent, and often overlooked security step is to use a long and complete password.</p>
-                        <p class="mt-2 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">A secure password should be at least eight characters and contain a combination of uppercase and lowercase letters, numerals, and symbols.</p>
-                      <p class="mt-2 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">Password security is a serious issue. When you use the same password for most of your online accounts, it's easy for someone to get into your email or social media account.</p>
+                    <div class="w-full sm:w-full mt-4 sm:mt-10">
+                      <h4 class="mt-4 mb-4 text-lg sm:text-xl text-white font-bold tracking-tight dark:text-slate-50">Why you need strong password?</h4>
+                      <p class="mt-4 mb-4 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">An excellent, and often overlooked security step is to use a long and complete password.</p>
+                        <p class="mt-2 mb-4 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">A secure password should be at least eight characters and contain a combination of uppercase and lowercase letters, numerals, and symbols.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md text-slate-300 font-normal tracking-tight dark:text-slate-50 ">Password security is a serious issue. When you use the same password for most of your online accounts, it's easy for someone to get into your email or social media account.</p>
                     </div>
               </div>
 
@@ -69,7 +71,7 @@
         </div>
       </main>
     </div>
-
+    
       <!-- Notification -->
           <Footer></Footer>
 

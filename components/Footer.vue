@@ -62,7 +62,7 @@
 </footer> -->
 
   <footer
-    class="w-full w-full py-10 mx-auto text-center flex items-center justify-center text-sm text-slate-600"
+    class="w-full w-full py-6 mx-auto text-center flex items-center justify-center text-sm text-slate-600"
   >
     <p>© 2022 Password Generator.</p>
   
