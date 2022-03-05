@@ -1,4 +1,68 @@
 <template>
+<div class="sm:max-w-3xl max-w-full mx-auto grid gap-3 py-8">
+    <h3 class="text-3xl leading-6 font-bold py-4 text-center px-4 rounded-md">Related Articles 📑</h3>
+
+    <div class="bg-slate-100 shadow-sm sm:rounded-lg py-2">
+        <div class="px-2 sm:px-6 py-2 sm:p-2">
+            <div class="sm:flex sm:items-start sm:justify-between">
+                <div>
+                    <h3 class="sm:text-xl text-sm font-medium text-gray-900 underline">20 Inspiring Quotes on Coding or Programming 👉 </h3>
+                </div>
+                <a href="/20-inspirational-quotes-on-coding-or-programming.html" target="_blank" class="mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-slate-600 hover:bg-slate-700 focus:outline-none  sm:text-sm">Let&apos;s go! 🚀</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-slate-100 shadow-sm sm:rounded-lg py-2">
+        <div class="px-2 sm:px-6 py-2 sm:py-2">
+            <div class="sm:flex sm:items-start sm:justify-between">
+                <div>
+                    <h3 class="sm:text-xl text-sm font-medium text-gray-900 underline">Marketing & Business Quotes by Seth Godin 👉 </h3>
+                </div>
+                <a href="/index.html" target="_blank" class="mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-slate-600 hover:bg-slate-700 focus:outline-none  sm:text-sm">Let&apos;s go! 🚀</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-slate-100 shadow-sm sm:rounded-lg py-2">
+        <div class="px-2 sm:px-6 py-2 sm:p-2">
+            <div class="sm:flex sm:items-start sm:justify-between">
+                <div>
+                    <h3 class="sm:text-xl text-sm font-medium text-gray-900 underline">Popular Quotes from Goodreads 👉 </h3>
+                </div>
+                <a href="/popular-quotes-from-goodreads.html" target="_blank" class="mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-slate-600 hover:bg-slate-700 focus:outline-none  sm:text-sm">Let&apos;s go! 🚀</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="bg-slate-100 shadow-sm sm:rounded-lg py-2">
+        <div class="px-2 sm:px-6 py-2 sm:p-2">
+            <div class="sm:flex sm:items-start sm:justify-between">
+                <div>
+                    <h3 class="sm:text-xl text-sm font-medium text-gray-900 underline">Strong Password Generator 👉</h3>
+                </div>
+                <a href="https://www.passwordgenerator.click/" target="_blank" class="mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:flex sm:items-center">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm font-medium rounded-md text-white bg-slate-600 hover:bg-slate-700 focus:outline-none sm:text-sm">Launch this 🚀</button>
+                </a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+        hbspt.forms.create({
+            region: "na1",
+            portalId: "21535910",
+            formId: "3dbc91ad-ea91-451c-a152-287e365f8bfd"
+        });
+    </script> -->
+</div>
   <!-- <footer class="px-16 py-16 mx-auto bg-gray-100">
   <nav class="grid grid-cols-2 gap-12 mb-12 md:grid-cols-3 lg:grid-cols-5">
     <div>
@@ -62,10 +126,10 @@
 </footer> -->
 
   <footer
-    class="w-full w-full py-6 mx-auto text-center flex items-center justify-center text-sm text-slate-600"
+    class="w-full w-full py-6 mx-auto text-center flex items-center justify-center text-sm text-slate-600 "
   >
     <p>© 2022 Password Generator.</p>
-  
+
   </footer>
 </template>
 
