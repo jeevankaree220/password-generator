@@ -51,6 +51,14 @@
                     </div>
                    </div>
                     <div class="w-full sm:w-full mt-4 sm:mt-10">
+                      <h4 class="mt-4 mb-4 text-lg sm:text-xl  font-bold tracking-tight">Key points of Password Security</h4>
+                      <p class="mt-4 mb-4 text-md sm:text-md  font-normal tracking-tight ">There are key password security points that users must understand in order to reduce the chances of a hacker cracking their password and thus gaining access to their device.</p>
+                        <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Above all, passwords must be long and complex.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Long and complex passwords take more effort and time to guess for a hacker.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Passwords should be at least ten characters long and contain a variety of characters such as commas, percent signs, parentheses, upper-case and lower-case letters and numbers.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Users should never write down their passwords because doing so makes it easier for someone else to steal and use the passwords.</p>
+                    </div>
+                    <div class="w-full sm:w-full mt-4 sm:mt-10">
                       <h4 class="mt-4 mb-4 text-lg sm:text-xl  font-bold tracking-tight">Why you need strong password?</h4>
                       <p class="mt-4 mb-4 text-md sm:text-md  font-normal tracking-tight ">An excellent, and often overlooked security step is to use a long and complete password.</p>
                         <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">A secure password should be at least eight characters and contain a combination of uppercase and lowercase letters, numerals, and symbols.</p>
@@ -245,14 +253,14 @@ input[type=range]::-webkit-slider-runnable-track {
 	height: 4px;
 	cursor: pointer;
 	animation: 0.2s;
-	/* background: #2563eb; */
+	background: #2563eb;
 	border-radius: 25px;
 }
 input[type=range]::-webkit-slider-thumb {
 	height: 20px;
 	width: 20px;
 	border-radius: 50%;
-	/* background: #fff; */
+	background: #fff;
 	box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
 	cursor: pointer;
 	-webkit-appearance: none;
