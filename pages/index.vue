@@ -52,11 +52,13 @@
                    </div>
                     <div class="w-full sm:w-full mt-4 sm:mt-10">
                       <h4 class="mt-4 mb-4 text-lg sm:text-xl  font-bold tracking-tight">Key points of Password Security</h4>
-                      <p class="mt-4 mb-4 text-md sm:text-md  font-normal tracking-tight ">There are key password security points that users must understand in order to reduce the chances of a hacker cracking their password and thus gaining access to their device.</p>
-                        <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Above all, passwords must be long and complex.</p>
-                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Long and complex passwords take more effort and time to guess for a hacker.</p>
-                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Passwords should be at least ten characters long and contain a variety of characters such as commas, percent signs, parentheses, upper-case and lower-case letters and numbers.</p>
-                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">Users should never write down their passwords because doing so makes it easier for someone else to steal and use the passwords.</p>
+                      <p class="mt-4 mb-4 text-md sm:text-md  font-normal tracking-tight ">To keep your online accounts safe and prevent your passwords from being hacked via social engineering, brute force, or dictionary attacks, keep the following in mind:</p>
+                        <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">1. Never use the same password, security question, and answer for multiple critical accounts.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">2. Create a password with at least 16 characters that includes a number, an uppercase letter, a lowercase letter, and a special symbol.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">3. Never use the names of your family, friends, or pets as passwords.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">4. Avoid using postcodes, house numbers, phone numbers, birthdates, ID card numbers, social security numbers, and other personal information in your passwords.</p>
+                      <p class="mt-2 mb-4 text-md sm:text-md  font-normal tracking-tight ">5. Do not use any dictionary word in your passwords. Examples of strong passwords: ePYHc^dS*(8$+V-' , wxRtC}6rXN3N\RgL , xafUMZPE6`FC%(sZ. <br>
+                      <span class="bg-yellow-500 font-medium text-gray-800">Examples of weak passwords: qwert12345, abcdEFGHijk123, 1234567890, 987654321, myownpassword.</span> </p>
                     </div>
                     <div class="w-full sm:w-full mt-4 sm:mt-10">
                       <h4 class="mt-4 mb-4 text-lg sm:text-xl  font-bold tracking-tight">Why you need strong password?</h4>
